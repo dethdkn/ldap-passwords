@@ -1,0 +1,46 @@
+{
+	"name": "ldap-passwords",
+	"type": "module",
+	"version": "1.0.0",
+	"description": "ldap-passwords offers secure password hashing and verification using LDAP password algorithms.",
+	"author": {
+		"name": "Gabriel 'DethDKN' Rosa",
+		"email": "gabriel@rosa.dev.br",
+		"url": "https://rosa.dev.br"
+	},
+	"license": "MIT",
+	"homepage": "https://ldap-passwords.com",
+	"bugs": "https://github.com/dethdkn/ldap-passwords/issues",
+	"keywords": [
+		"sha512",
+		"md5",
+		"ldap",
+		"crypt",
+		"passwords",
+		"hash",
+		"$6$"
+	],
+	"main": "dist/index.js",
+	"types": "types/index.d.ts",
+	"scripts": {
+		"build": "tsc",
+		"lint": "eslint .",
+		"lint:fix": "eslint . --fix",
+		"test": "tsc && vitest run",
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs"
+	},
+	"dependencies": {
+		"ldap-md5": "^1.0.0",
+		"ldap-sha512": "^2.1.1"
+	},
+	"devDependencies": {
+		"@antfu/eslint-config": "^2.6.2",
+		"@types/node": "^20.10.7",
+		"eslint": "^8.56.0",
+		"typescript": "^5.3.3",
+		"vitepress": "1.0.0-rc.36",
+		"vitest": "^1.1.3"
+	}
+}
