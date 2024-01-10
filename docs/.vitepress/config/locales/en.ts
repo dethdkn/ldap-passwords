@@ -25,7 +25,7 @@ export default defineConfig({
 			{
 				text: 'MD5',
 				items: [
-					{ text: 'md5Crypt', link: '/guide/md5crypt' },
+					{ text: 'md5', link: '/guide/md5' },
 					{ text: 'verifyMD5', link: '/guide/verifymd5' },
 				],
 			},

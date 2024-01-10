@@ -32,12 +32,12 @@
 		"docs:preview": "vitepress preview docs"
 	},
 	"dependencies": {
-		"ldap-md5": "^1.0.0",
-		"ldap-sha512": "^2.1.1"
+		"ldap-md5": "^1.0.2",
+		"ldap-sha512": "^2.1.2"
 	},
 	"devDependencies": {
 		"@antfu/eslint-config": "^2.6.2",
-		"@types/node": "^20.10.7",
+		"@types/node": "^20.10.8",
 		"eslint": "^8.56.0",
 		"typescript": "^5.3.3",
 		"vitepress": "1.0.0-rc.36",

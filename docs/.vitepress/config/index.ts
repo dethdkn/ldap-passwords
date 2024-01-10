@@ -5,6 +5,7 @@ import pt from './locales/pt'
 export default defineConfig({
 	title: 'Ldap Passwords',
 	lastUpdated: true,
+	cleanUrls: true,
 	sitemap: {
 		hostname: 'https://ldap-passwords.com',
 	},
