@@ -7,6 +7,36 @@ export default defineConfig({
 		nav: [
 			{ text: 'Guia', link: '/pt/guide/' },
 		],
+		search: {
+			provider: 'local',
+			options: {
+				locales: {
+					pt: {
+						translations: {
+					  		button: {
+								buttonText: 'Pesquisar',
+								buttonAriaLabel: 'Pesquisar',
+					  		},
+					  		modal: {
+								  backButtonTitle: 'Fechar Pesquisa',
+								  displayDetails: 'Mostra Lista Detalhada',
+								  resetButtonTitle: 'Resetar Pesquisa',
+								  noResultsText: 'Nenhum resultado para',
+								footer: {
+									navigateText: 'Para Navega',
+									navigateUpKeyAriaLabel: 'Seta para Cima',
+									navigateDownKeyAriaLabel: 'Seta para Baixo',
+						  			selectText: 'Para Selecionar',
+									selectKeyAriaLabel: 'Enter',
+									closeText: 'Para Sair',
+									closeKeyAriaLabel: 'esc',
+								},
+					  		},
+						},
+					},
+				},
+			},
+		},
 		sidebar: [
 			{
 				text: 'Guia',
