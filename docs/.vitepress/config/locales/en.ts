@@ -20,6 +20,8 @@ export default defineConfig({
 				items: [
 					{ text: 'sha512Crypt', link: '/guide/sha512crypt' },
 					{ text: 'verifySha512', link: '/guide/verifysha512' },
+					{ text: 'Sha512 Online Generator', link: '/online/sha512crypt' },
+					{ text: 'Sha512 Online Validator', link: '/online/verifysha512' },
 				],
 			},
 			{
@@ -27,6 +29,8 @@ export default defineConfig({
 				items: [
 					{ text: 'md5', link: '/guide/md5' },
 					{ text: 'verifyMD5', link: '/guide/verifymd5' },
+					{ text: 'MD5 Online Generator', link: '/online/md5' },
+					{ text: 'MD5 Online Validator', link: '/online/verifymd5' },
 				],
 			},
 		],
