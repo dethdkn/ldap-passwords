@@ -11,7 +11,6 @@ export default defineConfig({
 			{
 				text: 'Guide',
 				items: [
-					{ text: 'What is Ldap-passwords?', link: '/guide/what-is' },
 					{ text: 'Getting Started', link: '/guide/' },
 				],
 			},

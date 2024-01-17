@@ -41,7 +41,6 @@ export default defineConfig({
 			{
 				text: 'Guia',
 				items: [
-					{ text: 'Oque é Ldap-passwords?', link: '/pt/guide/what-is' },
 					{ text: 'Começando', link: '/pt/guide/' },
 				],
 			},
