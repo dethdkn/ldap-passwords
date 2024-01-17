@@ -7,7 +7,7 @@
       <img src="https://img.shields.io/npm/dt/ldap-passwords?color=%23c12127&label=downloads&logo=npm" alt="npm"/>
    </a>
    <a href="https://github.com/dethdkn/ldap-passwords/blob/main/LICENSE">
-      <img src="https://img.shields.io/github/license/dethdkn/ldap-sha512?color=%233da639&logo=open%20source%20initiative" alt="License"/>
+      <img src="https://img.shields.io/github/license/dethdkn/ldap-passwords?color=%233da639&logo=open%20source%20initiative" alt="License"/>
   </a>
    <a href="https://gitmoji.dev">
       <img src="https://img.shields.io/badge/gitmoji-%20😜%20😍-FFDD67" alt="Gitmoji"/>
