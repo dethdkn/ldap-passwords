@@ -13,7 +13,7 @@ const encryptedPassword = sha512Crypt('mySuperSecretPassword')
 // return {CRYPT}$6$NQgPVC0up/oNVCb4$Aduz92Zfo/PFDE/XhvA3QmSqHquqdNiCdZvc9N5/UTpEUepMdd/6Mq/TeoM07wvyxHpg8ELGVzTWZt2e7Z9LY/
 ```
 
-## 3. Criptografe uma senha de texto simples para sha512 com um salt personalizado::\
+## 3. Criptografe uma senha de texto simples para sha512 com um salt personalizado:
 **O tamanho máximo do salt é de 16 caracteres**
 ```ts
 const encryptedPassword = sha512Crypt('mySuperSecretPassword', 'myDopeCustomSalt')
