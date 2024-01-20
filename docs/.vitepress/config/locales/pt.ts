@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-	lang: 'en-US',
+	lang: 'pt-BR',
 	description: 'ldap-passwords oferece hashing e verificação de senhas usando algoritmos de senha do LDAP.',
 	themeConfig: {
 		nav: [
@@ -51,6 +51,15 @@ export default defineConfig({
 					{ text: 'verifySha512', link: '/pt/guide/verifysha512' },
 					{ text: 'Sha512 Gerador Online', link: '/pt/online/sha512crypt' },
 					{ text: 'Sha512 Validador Online', link: '/pt/online/verifysha512' },
+				],
+			},
+			{
+				text: 'SSHA',
+				items: [
+					{ text: 'ssha', link: '/pt/guide/ssha' },
+					{ text: 'verifySSHA', link: '/pt/guide/verifyssha' },
+					{ text: 'SSHA Gerador Online', link: '/pt/online/ssha' },
+					{ text: 'SSHA Validador Online', link: '/pt/online/verifyssha' },
 				],
 			},
 			{

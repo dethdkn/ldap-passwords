@@ -12,7 +12,7 @@ import { verifyMD5 } from 'ldap-md5'
 ```
 
 ## 2. Valide sua senha em texto simples com uma senha criptografada MD5:
-**A senha MD5 pode ser uma única string ou um array de strings. A senha em texto simples será comparada com cada senha sha512 e a função retornará true se alguma delas corresponder**
+**A senha MD5 pode ser uma única string ou um array de strings. A senha em texto simples será comparada com cada senha MD5 e a função retornará true se alguma delas corresponder**
 ```ts
 const isValid = verifyMD5('mySuperSecretPassword', arrayOfMD5Passwords)
 // return true or false

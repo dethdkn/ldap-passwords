@@ -24,6 +24,15 @@ export default defineConfig({
 				],
 			},
 			{
+				text: 'SSHA',
+				items: [
+					{ text: 'ssha', link: '/guide/ssha' },
+					{ text: 'verifySSHA', link: '/guide/verifyssha' },
+					{ text: 'SSHA Online Generator', link: '/online/ssha' },
+					{ text: 'SSHA Online Validator', link: '/online/verifyssha' },
+				],
+			},
+			{
 				text: 'MD5',
 				items: [
 					{ text: 'md5', link: '/guide/md5' },

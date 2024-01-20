@@ -26,6 +26,7 @@
 ## 🪄 Supported Algorithms
 
 - SHA512 CRYPT
+- SSHA
 - MD5
 
 ## 🚀 Setup
@@ -63,6 +64,26 @@ const isValid = verifySha512('mySuperSecretPassword', arrayOfSha512Passwords)
 // return true or false
 ```
 
+## 💡 SSHA
+
+1. Import the function into your project:
+```ts
+import { ssha, verifySSHA } from 'ldap-passwords'
+```
+
+2. Encrypt a plain text password using SSHA:
+```ts
+const encryptedPassword = ssha('mySuperSecretPassword')
+// return {SSHA}sTIysPunEI4boe6OwgQO+/tRZao2OWJIbDMvY0g2UlM=
+```
+
+3. Validate your plain text password with a MD5 encrypted password:\
+**The SSHA password can be either a single string or an array of strings. The plain text password will be compared to each SSHA password and the function will return true if any of them matches**
+```ts
+const isValid = verifySSHA('mySuperSecretPassword', arrayOfSSHAPasswords)
+// return true or false
+```
+
 ## 💥 MD5
 
 1. Import the function into your project:
@@ -86,4 +107,4 @@ const isValid = verifyMD5('mySuperSecretPassword', arrayOfMD5Passwords)
 ## 📝 License
 
 Copyright © 2024 [Gabriel 'DethDKN' Rosa](https://github.com/dethdkn)\
-This project is under [MIT license](https://github.com/dethdkn/ldap-sha512/blob/main/LICENSE)
+This project is under [MIT license](https://github.com/dethdkn/ldap-passwords/blob/main/LICENSE)

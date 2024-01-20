@@ -17,5 +17,6 @@ hero:
 
 features:
   - title: ⚡️ SHA512
+  - title: 💡 SSHA
   - title: 💥 MD5
 ---
