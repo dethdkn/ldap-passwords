@@ -6,6 +6,7 @@ export default defineConfig({
 	themeConfig: {
 		nav: [
 			{ text: 'Guia', link: '/pt/guide/' },
+			{ text: 'ldapVerifyAll', link: '/pt/guide/ldapverifyall' },
 		],
 		search: {
 			provider: 'local',
