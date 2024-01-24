@@ -1,6 +1,6 @@
 # Getting Started
 
-**Welcome to the documentation for the ldap-passwords package, a collection of tools for generating LDAP password hashes using various algorithms. This package includes two sub-packages: ldap-md5 and ldap-sha512. You have the flexibility to either install the combined package or choose specific algorithms based on your requirements.**
+**Welcome to the documentation for the ldap-passwords package, a collection of tools for generating LDAP password hashes using various algorithms. This package includes three sub-packages: ldap-md5, ldap-sha and ldap-sha512. You have the flexibility to either install the combined package or choose specific algorithms based on your requirements.**
 
 ## Option 1: Install ldap-passwords (Includes everything)
 
@@ -18,6 +18,13 @@ Install with your favorite package manager:
    - npm : `npm i ldap-sha512`
    - yarn : `yarn add ldap-sha512`
    - bun : `bun add ldap-sha512`
+
+### SSHA
+Install with your favorite package manager:
+   - **pnpm** : `pnpm i ldap-sha`
+   - npm : `npm i ldap-sha`
+   - yarn : `yarn add ldap-sha`
+   - bun : `bun add ldap-sha`
 
 ### MD5
 Install with your favorite package manager:
