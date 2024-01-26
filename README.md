@@ -16,6 +16,11 @@
       <img src="https://img.shields.io/badge/check me!-👻-F28AA9" alt="rosa.dev.br"/>
    </a>
 </p>
+<h3 align="center">
+   <a href="https://ldap-passwords.com/">
+      📚 Full Documentation
+   </a>
+</h3>
 
 ## ✨ Features
 
