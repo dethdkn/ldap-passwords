@@ -16,7 +16,7 @@ hero:
       link: https://github.com/dethdkn/ldap-passwords
 
 features:
-  - title: ⚡️ SHA512
+  - title: ⚡️ SHA512 CRYPT
   - title: 💡 SSHA
   - title: 💥 MD5
 ---
