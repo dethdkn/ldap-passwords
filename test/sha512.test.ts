@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { sha512Crypt, verifySha512 } from '../src/index'
+import { sha512Crypt, verifySha512Crypt } from '../src/index'
 
 const password = 'mySuperSecretPassword'
 const salt = 'myDopeCustomSalt'
@@ -26,11 +26,11 @@ it('should return a error when adding a salt larger than 16 chars', () => {
 })
 
 it('should return true', () => {
-	const returnedVerification = verifySha512(password, encryptedPass)
+	const returnedVerification = verifySha512Crypt(password, encryptedPass)
 	expect(returnedVerification).toBe(true)
 })
 
 it('should return false', () => {
-	const returnedVerification = verifySha512(password, anotherEncryptedPass)
+	const returnedVerification = verifySha512Crypt(password, anotherEncryptedPass)
 	expect(returnedVerification).toBe(false)
 })

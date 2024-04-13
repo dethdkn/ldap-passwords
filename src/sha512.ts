@@ -1,3 +1,5 @@
+import { randomBytes } from 'node:crypto'
+
 class Int64 {
 	h: number
 	l: number
@@ -249,7 +251,7 @@ function rstrSha512crypt(password: string, salt: string, rounds: number) {
 	return digest
 }
 
-export default function (password: string, salt: string): string {
+function _(password: string, salt: string): string {
 	const hash = rstrSha512crypt(password, salt, 5000)
 	const input = hash
 	let output = ''
@@ -270,4 +272,27 @@ export default function (password: string, salt: string): string {
 		}
 	}
 	return `{CRYPT}$6$${salt}$${output}`
+}
+
+export function sha512Crypt(textPassword: string, salt: string = ''): string {
+	if (!salt)
+		salt = randomBytes(16).toString('base64').substring(0, 16)
+	if (salt.length > 16)
+		throw new Error('The maximum length of salt is 16 characters')
+	return _(textPassword, salt)
+}
+
+export function verifySha512Crypt(textPassword: string, sha512Password: string | string[]): boolean {
+	let isValid = false
+	const sha512Passwords = typeof sha512Password === 'string' ? [sha512Password] : sha512Password
+	for (const cryptPasswd of sha512Passwords) {
+		const hashType = cryptPasswd.match(/\{([^}]+)\}/)
+		if (hashType && hashType[1] === 'CRYPT') {
+			const salt = cryptPasswd.split('$')[2]
+			const hashedPassword = sha512Crypt(textPassword, salt)
+			if (hashedPassword === cryptPasswd)
+				isValid = true
+		}
+	}
+	return isValid
 }

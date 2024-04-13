@@ -1,3 +1,4 @@
+import { randomBytes } from 'node:crypto';
 class Int64 {
     constructor(h, l) {
         this.h = h;
@@ -208,7 +209,7 @@ function rstrSha512crypt(password, salt, rounds) {
     }
     return digest;
 }
-export default function (password, salt) {
+function _(password, salt) {
     const hash = rstrSha512crypt(password, salt, 5000);
     const input = hash;
     let output = '';
@@ -230,4 +231,25 @@ export default function (password, salt) {
     }
     return `{CRYPT}$6$${salt}$${output}`;
 }
-//# sourceMappingURL=sha512Helpers.js.map
+export function sha512Crypt(textPassword, salt = '') {
+    if (!salt)
+        salt = randomBytes(16).toString('base64').substring(0, 16);
+    if (salt.length > 16)
+        throw new Error('The maximum length of salt is 16 characters');
+    return _(textPassword, salt);
+}
+export function verifySha512Crypt(textPassword, sha512Password) {
+    let isValid = false;
+    const sha512Passwords = typeof sha512Password === 'string' ? [sha512Password] : sha512Password;
+    for (const cryptPasswd of sha512Passwords) {
+        const hashType = cryptPasswd.match(/\{([^}]+)\}/);
+        if (hashType && hashType[1] === 'CRYPT') {
+            const salt = cryptPasswd.split('$')[2];
+            const hashedPassword = sha512Crypt(textPassword, salt);
+            if (hashedPassword === cryptPasswd)
+                isValid = true;
+        }
+    }
+    return isValid;
+}
+//# sourceMappingURL=sha512.js.map
