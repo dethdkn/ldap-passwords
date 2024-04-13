@@ -3,8 +3,6 @@
 ## 1. Importe a função para seu projeto:
 ```ts
 import { sha512Crypt } from 'ldap-passwords'
-// OR
-import { sha512Crypt } from 'ldap-sha512'
 ```
 
 ## 2. Criptografe uma senha de texto simples para sha512 com um salt aleatório:

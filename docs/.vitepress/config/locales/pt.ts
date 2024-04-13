@@ -50,8 +50,6 @@ export default defineConfig({
 				items: [
 					{ text: 'sha512Crypt', link: '/pt/guide/sha512crypt' },
 					{ text: 'verifySha512', link: '/pt/guide/verifysha512' },
-					{ text: 'Sha512 Gerador Online', link: '/pt/online/sha512crypt' },
-					{ text: 'Sha512 Validador Online', link: '/pt/online/verifysha512' },
 				],
 			},
 			{
@@ -59,8 +57,6 @@ export default defineConfig({
 				items: [
 					{ text: 'ssha', link: '/pt/guide/ssha' },
 					{ text: 'verifySSHA', link: '/pt/guide/verifyssha' },
-					{ text: 'SSHA Gerador Online', link: '/pt/online/ssha' },
-					{ text: 'SSHA Validador Online', link: '/pt/online/verifyssha' },
 				],
 			},
 			{
@@ -68,8 +64,6 @@ export default defineConfig({
 				items: [
 					{ text: 'md5', link: '/pt/guide/md5' },
 					{ text: 'verifyMD5', link: '/pt/guide/verifymd5' },
-					{ text: 'MD5 Gerador Online', link: '/pt/online/md5' },
-					{ text: 'MD5 Validador Online', link: '/pt/online/verifymd5' },
 				],
 			},
 		],

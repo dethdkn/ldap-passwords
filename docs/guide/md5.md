@@ -7,8 +7,6 @@ Keep in mind that MD5 is not considered a secure hashing algorithm for storing p
 ## 1. Import the function into your project:
 ```ts
 import { md5 } from 'ldap-passwords'
-// OR
-import { md5 } from 'ldap-md5'
 ```
 
 ## 2. Encrypt a plain text password using md5:

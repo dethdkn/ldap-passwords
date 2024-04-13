@@ -7,8 +7,6 @@ Lembre-se de que o MD5 não é considerado um algoritmo de hash seguro para arma
 ## 1. Importe a função para seu projeto:
 ```ts
 import { verifyMD5 } from 'ldap-passwords'
-// OR
-import { verifyMD5 } from 'ldap-md5'
 ```
 
 ## 2. Valide sua senha em texto simples com uma senha criptografada MD5:

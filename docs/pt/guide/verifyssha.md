@@ -3,8 +3,6 @@
 ## 1. Importe a função para seu projeto:
 ```ts
 import { verifySSHA } from 'ldap-passwords'
-// OR
-import { verifySSHA } from 'ldap-sha'
 ```
 
 ## 2. Valide sua senha em texto simples com uma senha criptografada SSHA:

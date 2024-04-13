@@ -3,8 +3,6 @@
 ## 1. Importe a função para seu projeto:
 ```ts
 import { ssha } from 'ldap-passwords'
-// OR
-import { ssha } from 'ldap-sha'
 ```
 
 ## 2. Criptografe uma senha de texto simples para SSHA:

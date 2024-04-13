@@ -3,8 +3,6 @@
 ## 1. Import the function into your project:
 ```ts
 import { sha512Crypt } from 'ldap-passwords'
-// OR
-import { sha512Crypt } from 'ldap-sha512'
 ```
 
 ## 2. Encrypt a plain text password using sha512 and a random salt:

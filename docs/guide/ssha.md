@@ -3,8 +3,6 @@
 ## 1. Import the function into your project:
 ```ts
 import { ssha } from 'ldap-passwords'
-// OR
-import { ssha } from 'ldap-sha'
 ```
 
 ## 2. Encrypt a plain text password using SSHA:

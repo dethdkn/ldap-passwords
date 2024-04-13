@@ -3,8 +3,6 @@
 ## 1. Importe a função para seu projeto:
 ```ts
 import { verifySha512 } from 'ldap-passwords'
-// OR
-import { verifySha512 } from 'ldap-sha512'
 ```
 
 ## 2. Valide sua senha em texto simples com uma senha criptografada sha512:
