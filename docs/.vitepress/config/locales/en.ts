@@ -19,7 +19,7 @@ export default defineConfig({
 				text: 'SHA512',
 				items: [
 					{ text: 'sha512Crypt', link: '/guide/sha512crypt' },
-					{ text: 'verifySha512', link: '/guide/verifysha512' },
+					{ text: 'verifySha512', link: '/guide/verifysha512crypt' },
 				],
 			},
 			{
