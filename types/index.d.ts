@@ -1,6 +1,6 @@
+export { md5, verifyMD5 } from './md5'
 export { sha512Crypt, verifySha512Crypt } from './sha512'
 export { ssha, verifySSHA } from './ssha'
-export { md5, verifyMD5 } from './md5'
 
 /**
  * @function

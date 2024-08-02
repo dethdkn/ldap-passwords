@@ -13,31 +13,31 @@ const sha512Pass = '{CRYPT}$6$myDopeCustomSalt$4ENRn.vwcs09z0fjr6Jt3NMOFVkn.p9v7
 const anotherSHA512Pass = '{CRYPT}$6$myDopeCustomSalt$D4JKgzmZmNroxjTQyA2MAsNvWvfxGCKVLzL1aGO0UMD24HGPiKvoZO0r899u.keezGsMdod3XSbXyOSFJv32Z1'
 
 it('should return true for md5 valid pass', () => {
-	const returnedVerification = ldapVerifyAll(password, md5Pass)
-	expect(returnedVerification).toBe(true)
+  const returnedVerification = ldapVerifyAll(password, md5Pass)
+  expect(returnedVerification).toBe(true)
 })
 
 it('should return false for md5 invalid pass', () => {
-	const returnedVerification = ldapVerifyAll(password, anotherMD5Pass)
-	expect(returnedVerification).toBe(false)
+  const returnedVerification = ldapVerifyAll(password, anotherMD5Pass)
+  expect(returnedVerification).toBe(false)
 })
 
 it('should return true for ssha valid pass', () => {
-	const returnedVerification = ldapVerifyAll(password, sshaPass)
-	expect(returnedVerification).toBe(true)
+  const returnedVerification = ldapVerifyAll(password, sshaPass)
+  expect(returnedVerification).toBe(true)
 })
 
 it('should return false for ssha invalid pass', () => {
-	const returnedVerification = ldapVerifyAll(password, anotherSSHAPass)
-	expect(returnedVerification).toBe(false)
+  const returnedVerification = ldapVerifyAll(password, anotherSSHAPass)
+  expect(returnedVerification).toBe(false)
 })
 
 it('should return true for sha512 valid pass', () => {
-	const returnedVerification = ldapVerifyAll(password, sha512Pass)
-	expect(returnedVerification).toBe(true)
+  const returnedVerification = ldapVerifyAll(password, sha512Pass)
+  expect(returnedVerification).toBe(true)
 })
 
 it('should return false for sha512 invalid pass', () => {
-	const returnedVerification = ldapVerifyAll(password, anotherSHA512Pass)
-	expect(returnedVerification).toBe(false)
+  const returnedVerification = ldapVerifyAll(password, anotherSHA512Pass)
+  expect(returnedVerification).toBe(false)
 })

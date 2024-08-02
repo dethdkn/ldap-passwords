@@ -1,13 +1,3 @@
-import antfu from '@antfu/eslint-config'
+import dethdkn from '@dethdkn/eslint-config'
 
-export default antfu({
-	typescript: true,
-	vue: true,
-	rules: {
-		'no-tabs': 'off',
-	},
-	stylistic: {
-		indent: 'tab',
-		quotes: 'single',
-	},
-})
+export default dethdkn({ nuxt: false, tailwind: false })
