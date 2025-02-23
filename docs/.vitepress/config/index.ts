@@ -7,7 +7,7 @@ export default defineConfig({
   lastUpdated: true,
   cleanUrls: true,
   sitemap: {
-    hostname: 'https://ldap-passwords.com',
+    hostname: 'https://ldap-passwords.vercel.app',
   },
   head: [
     ['meta', { name: 'theme-color', content: '#ecb732' }],

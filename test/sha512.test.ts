@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { sha512Crypt, verifySha512Crypt } from '../src/index'
+import { sha512Crypt, verifySha512Crypt } from '../src/main'
 
 const password = 'mySuperSecretPassword'
 const salt = 'myDopeCustomSalt'

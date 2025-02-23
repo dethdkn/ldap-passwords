@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { md5, verifyMD5 } from '../src/index'
+import { md5, verifyMD5 } from '../src/main'
 
 const password = 'mySuperSecretPassword'
 const encryptedPass = '{MD5}aTVgaG9NWR2N1eNABkQgYQ=='

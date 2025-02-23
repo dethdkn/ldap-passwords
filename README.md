@@ -1,4 +1,4 @@
-<a href="http://ldap-passwords.com/">
+<a href="http://ldap-passwords.vercel.app/">
 <h1 align="center">Ldap-passwords</h1>
 </a>
 <p align="center">ldap-passwords offers secure password hashing and verification using LDAP password algorithms.</p>
@@ -17,7 +17,7 @@
    </a>
 </p>
 <h3 align="center">
-   <a href="https://ldap-passwords.com/">
+   <a href="https://ldap-passwords.vercel.app/">
       📚 Full Documentation
    </a>
 </h3>

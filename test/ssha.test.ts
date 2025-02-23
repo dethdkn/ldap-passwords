@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { ssha, verifySSHA } from '../src/index'
+import { ssha, verifySSHA } from '../src/main'
 
 const password = 'mySuperSecretPassword'
 const encryptedPass = '{SSHA}sTIysPunEI4boe6OwgQO+/tRZao2OWJIbDMvY0g2UlM='

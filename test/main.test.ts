@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { ldapVerifyAll } from '../src/index'
+import { ldapVerifyAll } from '../src/main'
 
 const password = 'mySuperSecretPassword'
 
