@@ -1,7 +1,7 @@
 {
   "name": "ldap-passwords",
   "type": "module",
-  "version": "3.0.4",
+  "version": "3.0.5",
   "description": "ldap-passwords offers secure password hashing and verification using LDAP password algorithms.",
   "author": {
     "name": "Gabriel 'DethDKN' Rosa",
@@ -26,7 +26,6 @@
   "scripts": {
     "build": "tsc",
     "test": "tsc && vitest run",
-    "minify": "find dist -name '*.js' -exec terser {} -o {} \\;",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "docs:dev": "vitepress dev docs",
