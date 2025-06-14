@@ -5,3 +5,5 @@ eslint.config.js
 tsconfig.json
 **/.vitepress/cache
 **/.vitepress/dist
+build.config.mts
+bump.config.mts

@@ -21,24 +21,35 @@
     "hash",
     "$6$"
   ],
-  "main": "dist/main.js",
-  "types": "dist/main.d.ts",
+  "exports": {
+    ".": "./dist/main.mjs"
+  },
+  "main": "./dist/main.mjs",
+  "module": "./dist/main.mjs",
+  "types": "./dist/main.d.mts",
+  "files": ["dist"],
   "scripts": {
-    "build": "tsc",
-    "test": "tsc && vitest run",
+    "build": "obuild",
+    "dev": "tsx src/main.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "release": "obuild && bumpp && sudo npm publish"
   },
   "devDependencies": {
-    "@dethdkn/eslint-config": "^2.0.3",
-    "@types/node": "^22.13.5",
+    "@dethdkn/eslint-config": "^3.0.1",
+    "@types/node": "^24.0.1",
     "@vercel/analytics": "^1.5.0",
-    "eslint": "9.21.0",
-    "typescript": "^5.7.3",
+    "bumpp": "^10.1.1",
+    "eslint": "9.29.0",
+    "obuild": "^0.2.1",
+    "tsx": "^4.20.3",
+    "typescript": "^5.8.3",
     "vitepress": "1.6.3",
-    "vitest": "^3.0.6"
+    "vitest": "^3.2.3"
   }
 }

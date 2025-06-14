@@ -1,7 +1,7 @@
 import { Buffer } from 'node:buffer'
 import { createHash, randomBytes } from 'node:crypto'
 
-function _(textPasswd: string, customSalt?: Buffer): string{
+function _(textPasswd: string, customSalt?: Uint8Array): string{
   const salt = customSalt || randomBytes(18)
   const hashedPassword = createHash('sha1').update(textPasswd).update(salt)
   return `{SSHA}${Buffer.concat([hashedPassword.digest(), salt]).toString('base64')}`
